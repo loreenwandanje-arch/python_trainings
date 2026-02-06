@@ -14,4 +14,4 @@ number = int(input('Enter a number:'))
 result = check_number(number)
 print(result)
 
-print('something')
+print('something new')
