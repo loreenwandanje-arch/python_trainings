@@ -5,3 +5,13 @@
 # e.g if a user enters “712345678”, the program should display “+254712345678”
 # Once you learn functions,revisit this and write this code inside a function.
 
+def phonenumber_format (number) :
+    if number.startswith ('0') :
+        number = number[1:] #to remove first digit o
+        return '+254'+ number
+    else:
+        return 'Invalid number'
+
+phone = input ('Enter phone number')
+result = phonenumber_format (phone)
+print(result)

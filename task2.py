@@ -3,15 +3,14 @@
 #  Hint: how does an even / odd number react differently when divided by 2?
 # Once you learn functions,revisit this and write this code inside a function.
 def check_number (number) :
-    if number % 2 ==0:
-        return f'{number} is even'
-    elif number % 4==0 :
+     if number % 4==0 :
         return f'{number} is divisible by 4 '
-    else:
+     elif number % 2 ==0:
+        return f'{number} is even'
+   
+     else:
         return f'{number} is odd'
 
 number = int(input('Enter a number:'))
 result = check_number(number)
 print(result)
-
-print('something new')
